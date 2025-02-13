@@ -183,18 +183,46 @@
                                     
                                 </p>
                     
-                                    <h4><a href="https://www.fi-b.unam.mx/docs/ts/ic/Temarios/TS_III/TS_IC_III-CARLOSSAUCEDO.pdf">Temario del curso</a></h4>
+                                <!--Modales-->
 
-
-    
-
-                                <p>
-                                    
-                                    <h4><a href="https://drive.google.com/file/d/1-EC-DwhTCuSHwloA6Pzit0Yks_5VvNAq/view">Plan de la materia</a></h4>
-
-                                </p>
-
-
+                                <div class="image-container">
+                                    <div class="image-box">
+                                        <img src="images/temario.jpg" alt="Temario del curso" onclick="openModal('modalTemario', 'pdfs/CienciaDeDatos/Temas Selectos de Ingeniería en Computación III - Ciencia de Datos para la Toma de Decisiones en las Organizaciones.pdf')">
+                                        <p>Temario del curso</p>
+                                    </div>
+                                    <div class="image-box">
+                                        <img src="images/plandelamateriaCDD.png" alt="Plan de la materia" onclick="openModal('modalPlan', 'pdfs/CienciaDeDatos/Descriptivo Ciencia de Datos en la Toma de Decisiones de las Organizaciones-1.pdf')">
+                                        <p>Plan de la materia</p>
+                                    </div>
+                                    <div class="image-box">    
+                                        <img src="images/Semblanza.jpg" alt="Semblanza de expositores" onclick="openModal('modalSemblanza', 'pdfs/CienciaDeDatos/Semblanza de Expositores de Datos en la Toma de Decisiones.pdf')">
+                                        <p>Semblanza de expositores</p>
+                                    </div>
+                                </div>
+                            
+                                <!-- Modal del temario -->
+                                <div id="modalTemario" class="modal">
+                                    <div class="modal-content">
+                                        <span class="close" onclick="closeModal('modalTemario')">&times;</span>
+                                        <iframe id="pdfTemario"></iframe>
+                                    </div>
+                                </div>
+                            
+                                <!-- Modal del plan de la materia -->
+                                <div id="modalPlan" class="modal">
+                                    <div class="modal-content">
+                                        <span class="close" onclick="closeModal('modalPlan')">&times;</span>
+                                        <iframe id="pdfPlanMateria"></iframe>
+                                    </div>
+                                </div>
+                            
+                                <!-- Modal de la semblanza de expositores -->
+                                <div id="modalSemblanza" class="modal">
+                                    <div class="modal-content">
+                                        <span class="close" onclick="closeModal('modalSemblanza')">&times;</span>
+                                        <iframe id="pdfSemblanza"></iframe>
+                                    </div>
+                                </div>
                                 
                                 <!-- Post Content End -->
 

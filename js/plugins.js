@@ -8,7 +8,7 @@
  *
  * Open source under the BSD License.
  *
- * Copyright © 2008 George McGinley Smith
+ * Copyright ï¿½ 2008 George McGinley Smith
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without modification,
@@ -177,7 +177,7 @@ jQuery.extend( jQuery.easing,
  *
  * Open source under the BSD License.
  *
- * Copyright © 2001 Robert Penner
+ * Copyright ï¿½ 2001 Robert Penner
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without modification,
@@ -318,6 +318,17 @@ jQuery.extend( jQuery.easing,
 		return this.on({'mouseenter.hoverIntent':handleHover,'mouseleave.hoverIntent':handleHover}, cfg.selector);
 	};
 })(jQuery);
+
+/*Funciones para abrir y cerrar los modales*/
+function openModal(modalId, pdfSrc) {
+    document.getElementById(modalId).style.display = "block";
+    document.getElementById(modalId).querySelector("iframe").src = pdfSrc;
+}
+
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+    document.getElementById(modalId).querySelector("iframe").src = "";
+}
 
 
 
