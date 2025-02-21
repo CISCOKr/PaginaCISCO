@@ -190,16 +190,36 @@
                                     
                                 </p>
 
-                                <div class="entry-image alignleft">
+                                <!--<div class="entry-image alignleft">
                                     <a href="https://cuaieed-unam.zoom.us/j/81388314311">
                                         <img src="images/reunionCORE.png" style="width: 200px; height: 200px;">
                                     </a>
+                                </div>-->
+                                
+                                
+
+                                <!--Modales-->
+
+                                <div class="image-container">
+                                    <div class="image-box">
+                                        <a href="https://cuaieed-unam.zoom.us/j/81388314311" target="_blank">
+                                            <img src="images/reunionCORE.png">
+                                        </a>
+                                        <p>Reunión de BlockChain Core</p>
+                                    </div>
+                                    <div class="image-box">
+                                        <img src="images/core.png" alt="Página web de BlockChain Core" onclick="openModal('modalPaginaCore', 'https://coredao.org/')">
+                                        <p>Página web de BlockChain Core</p>
+                                    </div>
                                 </div>
                                 
-                    
-                                <h4><a href="https://coredao.org/" target="_blank">Página web de BlockChain Core</a></h4>
-
-
+                                <!-- Modal de la pagina -->
+                                <div id="modalPaginaCore" class="modal">
+                                    <div class="modal-content">
+                                        <span class="close" onclick="closeModal('modalPaginaCore')">&times;</span>
+                                        <iframe id="paginaCore"></iframe>
+                                    </div>
+                                </div>
 
 
                                 </p>

@@ -320,14 +320,28 @@ jQuery.extend( jQuery.easing,
 })(jQuery);
 
 /*Funciones para abrir y cerrar los modales*/
-function openModal(modalId, pdfSrc) {
-    document.getElementById(modalId).style.display = "block";
-    document.getElementById(modalId).querySelector("iframe").src = pdfSrc;
+function openModal(modalId, url) {
+    var modal = document.getElementById(modalId);
+    var iframe = modal.querySelector("iframe");
+    iframe.src = url;
+    modal.style.display = "flex";
 }
 
 function closeModal(modalId) {
-    document.getElementById(modalId).style.display = "none";
-    document.getElementById(modalId).querySelector("iframe").src = "";
+    var modal = document.getElementById(modalId);
+    var iframe = modal.querySelector("iframe");
+    iframe.src = "";
+    modal.style.display = "none";
+}
+
+// Close the modal when clicking outside of the modal content
+window.onclick = function(event) {
+    var modals = document.querySelectorAll('.modal');
+    modals.forEach(function(modal) {
+        if (event.target == modal) {
+            closeModal(modal.id);
+        }
+    });
 }
 
 
