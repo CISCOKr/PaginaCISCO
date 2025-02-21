@@ -189,18 +189,36 @@
                                     Viernes de 9 am a 12 pm
                                     
                                 </p>
-                    
-                <div class="footer-widgets-wrap clearfix">
-                                    <h4><a href="https://www.ingenieria.unam.mx/programas_academicos/licenciatura/Computacion/Comunes_Modulos/seminario_de_titulacion.pdf">Temario del curso</a></h4>
+                                <!--Modales-->
+
+                                <div class="image-container">
+                                    <div class="image-box">
+                                        <img src="images/clases/seminarioTitulacion/Temario.jpg" alt="Temario del curso" onclick="openModal('modalTemario', 'pdfs/SeminarioDeTitulacion/temarioSeminario.pdf')">
+                                        <p>Temario del curso</p>
+                                    </div>
+                                    <div class="image-box">
+                                        <img src="images/clases/seminarioTitulacion/PlanDeMateria.jpg" alt="Plan de la materia" onclick="openModal('modalPlan', 'pdfs/SeminarioDeTitulacion/planMateria.pdf')">
+                                        <p>Plan de la materia</p>
+                                    </div>
+                                   
+                                </div>                                
+                                <!-- Modal del temario -->
+                                <div id="modalTemario" class="modal">
+                                    <div class="modal-content">
+                                        <span class="close" onclick="closeModal('modalTemario')">&times;</span>
+                                        <iframe id="pdfTemario"></iframe>
+                                    </div>
+                                </div>
+                            
+                                <!-- Modal del plan de la materia -->
+                                <div id="modalPlan" class="modal">
+                                    <div class="modal-content">
+                                        <span class="close" onclick="closeModal('modalPlan')">&times;</span>
+                                        <iframe id="pdfPlanMateria"></iframe>
+                                    </div>
+                                </div>                    
 
 
-    
-
-                                <p>
-                                    
-                                    <h4><a href="https://www.rocioaldeco.com/home/teaching/seminario-de-titulaci%C3%B3n">Plan de la materia</a></h4>
-
-                                </p>
 
 
                                 
