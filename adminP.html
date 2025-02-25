@@ -190,14 +190,30 @@
                                     Martes y jueves de 7 a 9 am
                                 </p>
 
-                                    <h4><a href="https://www.ingenieria.unam.mx/programas_academicos/licenciatura/Computacion/08/inteligencia_artificial.pdf">Temario</a></h4>
-                                
 
-                                <p>
-                                
-                                    <h4><a href="http://dicyg.fi-c.unam.mx:8080/lalo">Plan de la materia</a></h4>
+                                <!--Modales-->
 
-                                </p>
+                                <div class="image-container">
+                                    <div class="image-box">
+                                        <img src="images/clases/IA/InteligenciaArtificialTemario.JPG" alt="Temario del curso" onclick="openModal('modalTemario', 'https://www.ingenieria.unam.mx/programas_academicos/licenciatura/Computacion/08/inteligencia_artificial.pdf')">
+                                        <p>Temario del curso</p>
+                                    </div>
+                                    <div class="image-box">
+                                        <a href="http://dicyg.fi-c.unam.mx:8080/lalo" target="_blank">
+                                            <img src="images/clases/IA/InteligenciaArtificialPlan.JPG" alt="Plan de la materia">
+                                        </a>
+                                        <p>Plan de la materia</p>
+                                    </div>
+                                   
+                                </div>                                
+                                <!-- Modal del temario -->
+                                <div id="modalTemario" class="modal">
+                                    <div class="modal-content">
+                                        <span class="close" onclick="closeModal('modalTemario')">&times;</span>
+                                        <iframe id="pdfTemario"></iframe>
+                                    </div>
+                                </div>
+                             
 
 
                                 

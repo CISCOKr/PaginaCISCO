@@ -200,18 +200,31 @@
                                     Martes y jueves de 1 a 3 pm
                                 </p>
 
-
-                                    <h4><a href="https://www.ingenieria.unam.mx/programas_academicos/licenciatura/Computacion/Redes_y_seguridad/criptografia.pdf">Temario del curso</a></h4>
-                                
-                                   
-                                    
-
-                                <p>
-                                    
-                                    <h4><a href="https://www.rocioaldeco.com/home/teaching/criptografía"
-                                        >Plan de la Materia</a></h4>
-
                                 </p>
+
+                                <!--Modales-->
+
+                                <div class="image-container">
+                                    <div class="image-box">
+                                        <img src="images/clases/Criptografia/CriptografiaTemario.JPG" alt="Temario del curso" onclick="openModal('modalTemario', 'https://www.ingenieria.unam.mx/programas_academicos/licenciatura/Computacion/Redes_y_seguridad/criptografia.pdf')">
+                                        <p>Temario del curso</p>
+                                    </div>
+                                    <div class="image-box">
+                                        <a href="https://www.rocioaldeco.com/home/teaching/criptografía" target="_blank">
+                                            <img src="images/clases/Criptografia/CriptografiaPlan.JPG" alt="Plan de la materia">
+                                        </a>
+                                        <p>Plan de la materia</p>
+                                    </div>
+                                </div>
+                            
+                                <!-- Modal del temario -->
+                                <div id="modalTemario" class="modal">
+                                    <div class="modal-content">
+                                        <span class="close" onclick="closeModal('modalTemario')">&times;</span>
+                                        <iframe id="pdfTemario"></iframe>
+                                    </div>
+                                </div>
+                            
 
 
                                 
