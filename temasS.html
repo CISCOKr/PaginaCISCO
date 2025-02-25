@@ -182,16 +182,25 @@
                                     Lunes y miércoles de 1 a 3 pm
                                 </p>
 
-                                    <h4><a href="https://www.fi-b.unam.mx/docs/ts/ic/Temarios/TS_III/TS_IC_III-ArturoPerez.pdf">Temario del curso</a></h4>
 
+                                <!--Modales-->
 
-    
-
-                                <p>
+                                <div class="image-container">
+                                    <div class="image-box">
+                                        <img src="images/clases/RealidadVirtual/RealidadVirtualTemario.JPG" alt="Temario del curso" onclick="openModal('modalTemario', 'https://www.fi-b.unam.mx/docs/ts/ic/Temarios/TS_III/TS_IC_III-ArturoPerez.pdf')">
+                                        <p>Temario del curso</p>
+                                    </div>
                                     
-                                    <h4>Plan de la materia</h4>
-
-                                </p>
+                                   
+                                </div>                                
+                                <!-- Modal del temario -->
+                                <div id="modalTemario" class="modal">
+                                    <div class="modal-content">
+                                        <span class="close" onclick="closeModal('modalTemario')">&times;</span>
+                                        <iframe id="pdfTemario"></iframe>
+                                    </div>
+                                </div>
+                            
 
 
                                 
