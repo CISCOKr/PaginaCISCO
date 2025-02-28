@@ -8478,6 +8478,25 @@ label.error { display: none !important; }
 	left: 0;
 }
 
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 100px; /* Margen izquierdo de 100px */
+    margin-right: 100px; /* Margen derecho de 100px */
+    max-width: calc(100% - 200px); /* Ancho máximo con margen */
+}
+
+#mapIframe {
+    width: 700px; /* Ajusta el tamaño según tus necesidades */
+    height: 700px; /* Asegúrate de que la altura sea igual al ancho */
+    border: none; /* Opcional: elimina el borde del iframe */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 5px solid #66ccff; /* Marco de color */
+}
+
 .gmap .gmnoprint,
 .gmap .gm-style-cc { display: none !important; }
 
