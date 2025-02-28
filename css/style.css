@@ -10195,6 +10195,17 @@ body:not(.no-transition) #wrapper,
     transform: scale(1.1);
 }
 
+.restricted {
+	position: fixed;
+	bottom: 10px; /* Pegado a la parte inferior */
+	right: 10px; /* Ajuste para separarlo del borde derecho */
+	font-size: 10px;
+	color: rgba(1, 1, 1, 0.1); /* Casi invisible */
+	pointer-events: none; /* No interfiere con clics */
+	user-select: none; /* No se puede seleccionar */
+	padding: 5px;
+}
+
 /* Estilizar el texto debajo de la imagen */
 .image-box p {
     margin-top: 5px;
